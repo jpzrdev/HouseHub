@@ -34,7 +34,7 @@ namespace Domain.Entities
             }
             else
             {
-                _items!.First(i => i.Item == item).AddQuantity(quantity);
+                _items!.Single(i => i.Item == item).AddQuantity(quantity);
             }
         }
 
